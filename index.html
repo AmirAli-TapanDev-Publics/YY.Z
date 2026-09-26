@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <title>دو روایت، دو رفیق — یک قاب</title>
+  <meta name="description" content="یک پرتفولیوی سینمایی و ادیتوریال برای معرفی یحیی و یوسف." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor cursor-dot"></div>
+  <div class="cursor cursor-ring"></div>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__number">00</div>
+    <div class="loader__line"><span></span></div>
+    <p>در حال آماده‌سازی قاب‌ها...</p>
+  </div>
+
+  <canvas id="scene"></canvas>
+
+  <header class="site-header">
+    <a class="brand magnetic" href="#top" aria-label="بازگشت به ابتدا">
+      <span>THE</span>
+      <strong>TWO</strong>
+      <span>ARCHIVE</span>
+    </a>
+    <div class="header-meta">
+      <span>یک هدیه‌ی کوچک</span>
+      <span>MMXXVI</span>
+    </div>
+    <a class="menu magnetic" href="#people">
+      <span>مشاهده</span>
+      <span class="menu__dot"></span>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__eyebrow reveal">پرتره‌هایی از دو آدم دوست‌داشتنی</div>
+      <h1 class="hero__title">
+        <span>دو نفر،</span>
+        <span class="outline">دو روایت،</span>
+        <span>یک خاطره.</span>
+      </h1>
+      <div class="hero__bottom">
+        <p class="hero__intro">
+          بعضی آدم‌ها را نمی‌شود فقط با چند جمله معرفی کرد؛
+          باید کمی مکث کرد، نگاهشان کرد و گذاشت خودشان داستانشان را تعریف کنند.
+        </p>
+        <div class="scroll-note">
+          <span>اسکرول کن</span>
+          <i></i>
+        </div>
+      </div>
+      <div class="hero__index">01 / 04</div>
+    </section>
+
+    <section class="statement">
+      <div class="statement__label reveal">THE IDEA</div>
+      <div class="statement__text">
+        <p class="reveal">
+          اینجا قرار نیست یک رزومه‌ی رسمی ببینی.
+          اینجا یک قاب کوچک است برای ثبت چیزهایی که شاید
+          در یک عکس دیده نشوند؛ شوخی‌ها، انرژی، رفاقت و آن
+          حس آشناییِ خوبی که از بودن کنار یک آدم می‌گیری.
+        </p>
+      </div>
+    </section>
+
+    <section class="people" id="people">
+      <div class="section-head">
+        <span class="section-kicker">02 / THE PORTRAITS</span>
+        <span class="section-line"></span>
+        <span class="section-count">02</span>
+      </div>
+
+      <article class="portrait portrait--first" data-person="yahya">
+        <div class="portrait__ambient"></div>
+        <div class="portrait__name">
+          <span class="name-small">PORTRAIT — 01</span>
+          <h2>یحیی</h2>
+          <span class="name-latin">YAHYA</span>
+        </div>
+
+        <div class="portrait__photo-wrap">
+          <div class="portrait__beam"></div>
+          <div class="portrait__photo">
+            <img src="Yahya1.png" alt="پرتره یحیی" />
+          </div>
+        </div>
+
+        <div class="traits traits--right" aria-label="ویژگی‌ها">
+          <span>مهربون</span>
+          <span>خوش‌صحبت</span>
+          <span>باانرژی</span>
+          <span>رفیق‌باز</span>
+        </div>
+
+        <div class="traits traits--left">
+          <span>خوش‌استایل</span>
+          <span>باحال</span>
+          <span>قابل‌اعتماد</span>
+        </div>
+
+        <div class="portrait__bio">
+          <span class="bio-index">A / 01</span>
+          <p>
+            یحیی از آن آدم‌هایی است که حضورش خیلی زود در یک جمع
+            به چشم می‌آید. ترکیبی از آرامش، شوخی‌های به‌موقع و
+            یک انرژی صمیمی که باعث می‌شود کنارش احساس غریبی نکنی.
+          </p>
+        </div>
+      </article>
+
+      <article class="portrait portrait--second" data-person="yousef">
+        <div class="portrait__ambient"></div>
+        <div class="portrait__name">
+          <span class="name-small">PORTRAIT — 02</span>
+          <h2>یوسف</h2>
+          <span class="name-latin">YOUSEF</span>
+        </div>
+
+        <div class="portrait__photo-wrap">
+          <div class="portrait__beam"></div>
+          <div class="portrait__photo">
+            <img src="Yousef1.png" alt="پرتره یوسف" />
+          </div>
+        </div>
+
+        <div class="traits traits--right" aria-label="ویژگی‌ها">
+          <span>خوش‌قلب</span>
+          <span>شوخ‌طبع</span>
+          <span>خوش‌انرژی</span>
+          <span>باادب</span>
+        </div>
+
+        <div class="traits traits--left">
+          <span>کنجکاو</span>
+          <span>خوش‌رفیق</span>
+          <span>خاص</span>
+        </div>
+
+        <div class="portrait__bio">
+          <span class="bio-index">B / 02</span>
+          <p>
+            یوسف یک جور حضور آرام اما به‌یادماندنی دارد؛
+            از آن مدل آدم‌هایی که لازم نیست همیشه وسط قاب باشند
+            تا حضورشان حس شود. ساده، صمیمی و پر از جزئیات دوست‌داشتنی.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="duo">
+      <div class="duo__top">
+        <span>03 / TOGETHER</span>
+        <span>THE DUO</span>
+      </div>
+      <div class="duo__title">
+        <span>وقتی کنار هم‌اند</span>
+        <span class="outline">قاب کامل می‌شود.</span>
+      </div>
+
+      <div class="duo__grid">
+        <div class="duo-card duo-card--a">
+          <img src="Yahya1.png" alt="" />
+          <span>YAHYA / 01</span>
+        </div>
+        <div class="duo-card duo-card--b">
+          <img src="Yousef1.png" alt="" />
+          <span>YOUSEF / 02</span>
+        </div>
+      </div>
+
+      <p class="duo__copy">
+        شاید بهترین بخش یک دوستی، چیزهایی باشد که هیچ‌وقت
+        برایشان اسم مشخصی پیدا نمی‌کنیم؛ یک نگاه، یک شوخی،
+        یک خاطره‌ی تکراری که هنوز خنده‌دار است.
+      </p>
+    </section>
+
+    <section class="closing">
+      <div class="closing__halo"></div>
+      <div class="closing__content">
+        <span class="section-kicker">04 / A LITTLE NOTE</span>
+        <h2>برای اینکه<br><em>یادتان بماند.</em></h2>
+        <p>
+          این سایت یک یادگاری کوچک است؛ نه برای اینکه همه‌چیز را
+          توضیح بدهد، فقط برای اینکه یک روز، چند سال بعد،
+          دوباره بازش کنید و لبخند بزنید.
+        </p>
+        <div class="signature">with love — from a friend</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>THE TWO ARCHIVE</span>
+    <span>MADE AS A GIFT</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
